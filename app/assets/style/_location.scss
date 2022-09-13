@@ -1,0 +1,82 @@
+.location {
+    padding-top: 96px;
+    padding-bottom: 80px;
+    @include pad {
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 1.5;
+        border-left: 8px #9f1213 solid;
+        padding-left: 16px;
+    }
+
+    .drop-menu {
+        font-size: 24px;
+        line-height: 1.5;
+        vertical-align: middle;
+        margin: 32px 0 40px 0;
+        @include pad {
+            margin: 24px 0;
+        }
+
+        select {
+            font-size: 18px;
+            width: 200px;
+            height: 38px;
+        }
+    }
+
+    .shop-list {
+        display: flex;
+        justify-content: start;
+        column-gap: 24px;
+        row-gap: 48px;
+        flex-wrap: wrap;
+
+        .shop-card {
+            width: calc((100% - 48px) / 3);
+            border: 1px solid #00000020;
+            @include pad{
+                width: 100%;
+            }
+        }
+
+        .shop-name {
+            border-bottom: 1px solid #00000020;
+            padding: 8px 24px;
+            font-size: 24px;
+            line-height: 1.5;
+        }
+
+        .shop-info {
+            padding: 16px 24px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            font-size: 20px;
+            line-height: 1.5;
+            i {
+                margin-right: 8px;
+                width: 24px;
+                text-align: center;
+            }
+        }
+
+        button{
+            width: 100%;
+            border-radius: 0px;
+            border:none;
+            background-color: #000000;
+            font-size: 18px;
+            line-height: 1.5;
+            color:white;
+            padding: 16px 0;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+}
